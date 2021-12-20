@@ -19,7 +19,7 @@ public interface RecipeAPI {
 
     @GET("recipes/{recipe_id}")
     Call<RecipeResponse> getRecipe(
-            @Path("recipe_id") int recipe_id,
+            @Path("recipe_id") String recipe_id,
             @Query("key") String api_key
     );
 
